@@ -92,6 +92,45 @@ namespace PizzafaceUltrakillMod
 
             }
             transform.rotation = Quaternion.LookRotation(Camera.current.transform.position - transform.position);
+            if (Vector3.Distance(transform.position, MonoSingleton<NewMovement>.Instance.transform.position) < 25f)
+            {
+
+                transform.GetChild(0).GetComponent<AudioSource>().mute = false;
+                if (Vector3.Distance(transform.position, MonoSingleton<NewMovement>.Instance.transform.position) < 20f)
+                {
+                    if (Vector3.Distance(transform.position, MonoSingleton<NewMovement>.Instance.transform.position) < 15f)
+                    {
+                        if (Vector3.Distance(transform.position, MonoSingleton<NewMovement>.Instance.transform.position) < 10f)
+                        {
+                            if (Vector3.Distance(transform.position, MonoSingleton<NewMovement>.Instance.transform.position) < 5f)
+                            {
+                                transform.GetChild(0).GetComponent<AudioSource>().volume = 1f;
+                            }
+                            else
+                            {
+                                transform.GetChild(0).GetComponent<AudioSource>().volume = 0.80f;
+                            }
+                        }
+                        else
+                        {
+                            transform.GetChild(0).GetComponent<AudioSource>().volume = 0.60f;
+                        }
+                    }
+                    else
+                    {
+                        transform.GetChild(0).GetComponent<AudioSource>().volume = 0.40f;
+                    }
+                }
+                else
+                {
+                    transform.GetChild(0).GetComponent<AudioSource>().volume = 0.20f;
+                }
+
+            }
+            else
+            {
+                transform.GetChild(0).GetComponent<AudioSource>().mute = true;
+            }
             if (timeUntilTrail <= 0)
             {
                 GameObject pizzaTrail = new GameObject();
