@@ -70,6 +70,7 @@ namespace PizzafaceUltrakillMod
             transparency = 0;
             yOffset = new Vector3(0, 1.5f, 0);
             timeUntilTrail = 0.5f;
+
         }
         public void Update()
         {
@@ -81,7 +82,7 @@ namespace PizzafaceUltrakillMod
             {
                 if (Vector3.Distance(transform.position, MonoSingleton<NewMovement>.Instance.transform.position) > 50f)
                 {
-                    float speedMod = (Vector3.Distance(transform.position, MonoSingleton<NewMovement>.Instance.transform.position) - 50) * 2;
+                    float speedMod = (Vector3.Distance(transform.position, MonoSingleton<NewMovement>.Instance.transform.position) - 50) * 3;
                     transform.position = Vector3.MoveTowards(transform.position, MonoSingleton<NewMovement>.Instance.transform.position + yOffset, Time.deltaTime * (17f + speedMod));
                 }
                 else
@@ -103,6 +104,7 @@ namespace PizzafaceUltrakillMod
                 Instantiate(pizzaTrail, transform.position, transform.rotation);
                 timeUntilTrail = 0.5f;
             }
+
         }
         void OnTriggerEnter(Collider other)
         {
@@ -151,7 +153,7 @@ namespace PizzafaceUltrakillMod
             Instantiate(pizzaTrail, transform.position, transform.rotation);
             timeUntilTrail = 0.5f;
             Destroy(gameObject);
-            if (kill)
+            if (kill && SceneHelper.CurrentScene != "Endless")
             {
                 SceneHelper.LoadScene(SceneHelper.CurrentScene);
             }

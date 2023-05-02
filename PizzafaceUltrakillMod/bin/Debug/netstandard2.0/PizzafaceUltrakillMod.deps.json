@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "PizzafaceUltrakillMod/1.0.0": {
+      "PizzafaceUltrakillMod/1.1.0": {
         "dependencies": {
           "BepInEx.Analyzers": "1.0.8",
           "BepInEx.Core": "5.4.21",
@@ -518,7 +518,7 @@
     }
   },
   "libraries": {
-    "PizzafaceUltrakillMod/1.0.0": {
+    "PizzafaceUltrakillMod/1.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
