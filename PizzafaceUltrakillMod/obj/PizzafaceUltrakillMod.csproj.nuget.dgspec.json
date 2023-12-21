@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Peace\\Desktop\\PizzafaceUltrakillMod\\PizzafaceUltrakillMod\\PizzafaceUltrakillMod.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Peace\\Desktop\\PizzafaceUltrakillMod\\PizzafaceUltrakillMod\\PizzafaceUltrakillMod.csproj": {
+      "version": "1.2.2",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Peace\\Desktop\\PizzafaceUltrakillMod\\PizzafaceUltrakillMod\\PizzafaceUltrakillMod.csproj",
+        "projectName": "PizzafaceUltrakillMod",
+        "projectPath": "C:\\Users\\Peace\\Desktop\\PizzafaceUltrakillMod\\PizzafaceUltrakillMod\\PizzafaceUltrakillMod.csproj",
+        "packagesPath": "C:\\Users\\Peace\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Peace\\Desktop\\PizzafaceUltrakillMod\\PizzafaceUltrakillMod\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Peace\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://nuget.bepinex.dev/v3/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "BepInEx.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.*, )"
+            },
+            "BepInEx.Core": {
+              "target": "Package",
+              "version": "[5.*, )"
+            },
+            "BepInEx.PluginInfoProps": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "UnityEngine.Modules": {
+              "include": "Compile",
+              "target": "Package",
+              "version": "[2023.2.3, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
